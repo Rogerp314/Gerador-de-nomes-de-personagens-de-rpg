@@ -3,6 +3,7 @@ O programa foi feito totalmente em Python com ajuda de seus módulos listados a 
 -Python;
 -Pyinstaller (Facilitar o uso com um arquivo executável);
 -Venv (Crianção de um ambiente virtual);
+-Tkinter (Criação e manipulação de janelas para o programa)
 
 Com o Pyinstaller fiz um executável, assim facilitando o uso do usuário que não necessita mais instalar o interpretador Python.
 Com o venv criei um ambiente virtual que facilita a organização dos arquivos.
