@@ -15,10 +15,11 @@ def nome():
     classe = [ 'Mago', 'Ladino', 'Necromante', 'Cavaleiro', 'Arqueiro', 'Bardo', 'Feitiçeiro', 'Bruxo']
     letras = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q','r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
     caracteres = int(input('Quantos caractéres seu nome terá? '))
-    sorteio = choice(letras)
-    #Usar for para o número de sorteio de letras atingir o número de caractéres.
-    print(sorteio*caracteres)
-
+    for s in range(0, caracteres):
+        sorteio = choice(letras)
+        print('{}'.format(sorteio.capitalize()), end='')
+    
+#Fazer com que o print da classe fique na mesma linha que a do nome e por fim colocar o programa na janela e personalizala. =)
 
 
 #Criando tela
