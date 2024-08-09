@@ -2,7 +2,7 @@ from random import *
 from tkinter import *
 #Função que vai gerar o nome
 def nome():
-    escolha = int(input('''Qual sua classe?\n 
+    escolha = Label(tela, text='''Qual sua classe?\n 
                        [ 1 ] Mago\n 
                        [ 2 ] Ladino\n 
                        [ 3 ] Necromante\n 
@@ -11,13 +11,15 @@ def nome():
                        [ 6 ] Bardo\n 
                        [ 7 ] Feitiçeiro\n
                        [ 8 ] Bruxo\n
-                    Escolha: '''))
+                    Escolha: ''')
+    escolha.pack()
+    opção = Entry(tela).pack()
     classe = [ 'Mago', 'Ladino', 'Necromante', 'Cavaleiro', 'Arqueiro', 'Bardo', 'Feitiçeiro', 'Bruxo']
     letras = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q','r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-    caracteres = int(input('Quantos caractéres seu nome terá? '))
+    caracteres = (input('Quantos caractéres seu nome terá? '))
     for s in range(0, caracteres):
         sorteio = choice(letras)
-        print('{}'.format(sorteio.capitalize()), end='')
+        print('{} o {}'.format(sorteio.capitalize(), classe[0]), end='')
     
 #Fazer com que o print da classe fique na mesma linha que a do nome e por fim colocar o programa na janela e personalizala. =)
 
